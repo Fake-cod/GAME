@@ -1,4 +1,4 @@
-# Project
+
 # Tetris Game
 
 ## Overview
@@ -27,38 +27,53 @@ This is a simple implementation of the classic Tetris game using C++ and the SFM
    ```bash
    git clone https://github.com/yourusername/tetris.git
    cd tetris
-Install SFML:
+## Install SFML:
 
-Follow the instructions for your operating system from the SFML website.
-Build the Project:
+Follow the instructions for your operating system from the [SFML website](https://www.sfml-dev.org/download.php).
 
-Use CMake to generate build files:
+## Build the Project:
+
+1.Use CMake to generate build files:
 bash
 Copy code
 mkdir build
 cd build
 cmake ..
-Build the project using make:
+
+2.Build the project using make:
 bash
 Copy code
 make
-Run the Game:
+
+### Run the Game:
 
 Execute the compiled binary:
 bash
 Copy code
 ./tetris
-Files
-main.cpp: The entry point of the game. Handles game loop, user input, and rendering.
-game.h: Defines the Game class that controls game logic.
-game.cpp: Implements the Game class methods.
-block.h: Defines the Block class and its derived classes for different Tetris shapes.
-block.cpp: Implements methods for the Block class.
-grid.h: Defines the Grid class for managing the game board.
-grid.cpp: Implements the Grid class methods.
-position.h: Defines the Position class to store row and column information.
-colors.h: Defines colors used for different blocks.
-colors.cpp: Implements the color definitions.
+
+## Files
+
+- **main.cpp**: The entry point of the game. Handles game loop, user input, and rendering.
+- **game.h**: Defines the Game class that controls game logic.
+- **game.cpp**: Implements the Game class methods.
+- **block.h**: Defines the Block class and its derived classes for different Tetris shapes.
+- **block.cpp**: Implements methods for the Block class.
+- **grid.h**: Defines the Grid class for managing the game board.
+- **grid.cpp**: Implements the Grid class methods.
+- **position.h**: Defines the Position class to store row and column information.
+- **colors.h**: Defines colors used for different blocks.
+- **colors.cpp**: Implements the color definitions.
+
+## Notes
+
+- **Music**: Ensure you have a file named `backgroundmusic.mp3` in the same directory as the executable for background music. You can replace this with your preferred MP3 file.
+- **Font**: Ensure you have the font file `Jersey10-Regular.ttf` in the same directory as the executable for text rendering.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
 Notes
 Music: Ensure you have a file named backgroundmusic.mp3 in the same directory as the executable for background music. You can replace this with your preferred MP3 file.
 
